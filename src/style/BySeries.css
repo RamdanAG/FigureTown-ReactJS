@@ -1,0 +1,65 @@
+/* Container for series items */
+.series-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 items per row */
+    gap: 20px;
+    justify-items: center;
+    margin: 20px;
+  }
+  .headingSeries {
+    margin-left: 9rem;
+}
+  .headingSeries h1{
+    font-family: "Poppins", system-ui;
+    font-weight: 700;
+    font-style: normal;
+}
+  .headingSeries a{
+    font-family: "Poppins", system-ui;
+    font-weight: 500;
+    font-style: normal;
+    color: #227B94;
+    text-decoration: none;
+}
+  /* Styling each series item */
+  .series-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Styling the image */
+  .series-image {
+    width: 180px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  /* Text under each image */
+  .series-name {
+    font-family: "Poppins", system-ui;
+    font-weight: 500;
+    font-style: normal;
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  /* Responsive layout for mobile */
+  @media (max-width: 768px) {
+    .series-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 items per row on mobile */
+      gap: 15px;
+    }
+  
+    .series-image {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .series-name {
+      font-size: 12px;
+    }
+  }
+  

@@ -1,0 +1,69 @@
+/* ProductGallery.css */
+
+.GalleryH {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 0.5rem; /* Reduced gap between the boxes */
+    padding: 1rem;
+}
+
+.ImageHighlight {
+    min-width: 150px; /* Reduced box size */
+    flex-shrink: 0;
+    cursor: grab;
+}
+
+.ImageHighlight img {
+    height: 30rem;
+    width: 100%; /* Set image width to fill the container */
+    border-radius: 8px;
+}
+
+
+/* Hide the scrollbar */
+.GalleryH::-webkit-scrollbar {
+    display: none;
+
+}
+
+/* Marquee Container */
+.marquee-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem; /* Space between marquees */
+}
+
+/* Marquee Line */
+.marquee-line {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+}
+
+/* Regular Marquee Animation */
+.marquee-line span {
+    font-size: 1.6rem;
+    display: inline-block;
+    padding-left: 50%; /* Start the text in the middle */
+    animation: scrollLine 25s linear infinite;
+    color: #000000;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+}
+/* Regular Animation for the text scrolling left */
+@keyframes scrollLine {
+    0% {
+        transform: translateX(50%); /* Starts the text from the middle */
+    }
+    100% {
+        transform: translateX(-100%); /* Ends when the text leaves the left side */
+    }
+}

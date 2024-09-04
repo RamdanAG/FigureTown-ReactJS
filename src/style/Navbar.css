@@ -1,0 +1,90 @@
+/* General Styling for Navbars */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .Hrline {
+    width: 80%;
+  }
+
+  .IMGlogo{
+    height: 3rem;
+  }
+
+  .headingNavitem{
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .headingNavitem a{
+    font-family: "Poppins", system-ui;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+  }
+  .headingNavitem a:hover{
+    color: white;
+    text-decoration: underline;
+  }
+  
+  /* First Navbar */
+  .navbar-top {
+    position: sticky;
+    top: 0; /* Sticks at the top of the page */
+    z-index: 1000; /* Ensures it's on top of other content */
+    background-color: #16325B;
+    height: 10vh;
+  }
+  
+  /* Navbar Items */
+  .navbar-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 15px;
+    color: white;
+  }
+
+  .navbar-item button{
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 2rem;
+  }
+
+  .navbar-item button a{
+    text-decoration: none;
+    color: #16325B;
+  }
+  
+  .navbar-item span {
+    margin-top: 5px;
+    font-size: 14px;
+  }
+  
+  .navbar-item:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  
+  /* Divider between Navbars */
+  .navbar-divider {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 0;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .navbar {
+      justify-content: space-around;
+    }
+  
+    .navbar-item {
+      margin: 0 8px;
+    }
+  }
+  

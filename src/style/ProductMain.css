@@ -1,0 +1,249 @@
+/* PRODUCT STORE */
+.product-store {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem;
+}
+  
+/* ASIDE */
+.sidebar {
+    width: 20%;
+    padding: 1rem;
+    border-radius: 10px;
+    /* Removed the background-color property */
+}
+  
+/* MAIN PRODUCT */
+
+.headingMain {
+    margin-bottom: 1.5rem;
+}
+
+.main-product {
+    width: 100%;
+    padding: 1rem;
+}
+  
+.main-product h1 {
+    font-family: "Poppins", system-ui;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.main-product a {
+    font-family: "Poppins", system-ui;
+    font-weight: 500;
+    color: #227B94;
+    text-decoration: none;
+}
+  
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+    gap: 1rem;
+}
+  
+.product-card {
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding-bottom: 0.5rem;
+}
+  
+.product-card:hover {
+    transform: translateY(-5px);
+}
+  
+.product-image {
+    padding: 1rem;
+    width: 60%;
+    height: auto;
+    object-fit: contain;
+    background-color: white;
+}
+  
+.product-info {
+    padding: 0.5rem;
+}
+  
+.product-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #227B94;
+    text-align: left;
+    font-family: "Poppins", system-ui;
+    font-weight: 700;
+    font-style: normal;
+}
+  
+.product-info p {
+    font-size: 0.9rem;
+    color: #666;
+    text-align: left;
+    font-family: "Poppins", system-ui;
+    font-weight: 500;
+    font-style: normal;
+}
+  
+.btn-buy {
+    display: block;
+    width: 100%;
+    padding: 0.7rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    border: none;
+    margin-top: 0.5rem;
+    background-color: #16325B;
+}
+  
+.btn-buy a {
+    color: white;
+    text-decoration: none;
+}
+  
+.load-more {
+    text-align: center;
+    margin-top: 2rem;
+}
+  
+.load-more button {
+    padding: 1rem 2rem;
+    background-color: #16325B;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.load-more button:hover {
+    background-color: #4B4EEF;
+}
+  
+/* BANNER */
+.banner-container {
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+  
+.banner-image {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+  
+/* General Sidebar Styling */
+.sidebar {
+    width: 20rem;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0; /* Makes the sidebar stick to the top */
+    padding: 1rem;
+    height: 100vh; /* Takes full viewport height */
+    overflow-y: auto; /* Allows scrolling inside the sidebar if content is too long */
+    border-right: 1px solid #ddd;
+    /* Removed background-color property */
+}
+  
+/* Filter Section Styling */
+.filter-section {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background-color: #fff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+  
+/* Heading Styling */
+.filter-section h3 {
+    border-radius: 10px 10px 0 0;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    margin: 0;
+    border-bottom: 1px solid #ddd;
+    font-family: "Poppins", system-ui;
+    font-weight: 700;
+    font-style: normal;
+    background-color: #16325B;
+    color: white;
+}
+  
+/* List Styling */
+.filter-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", system-ui;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* List Item Styling */
+.filter-section li {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+/* Hover Effect for List Items */
+.filter-section li:hover {
+    background-color: #f1f1f1;
+}
+  
+/* Checkbox Styling */
+.filter-section input[type="checkbox"] {
+    margin-right: 10px;
+}
+  
+/* Ensuring Sidebar is Responsive */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 0.5rem;
+        border-right: none;
+    }
+}
+
+/* Filter Buttons */
+.filter-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .filter-button {
+    padding: 0.7rem 2rem;
+    background-color: #16325B;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .filter-button:hover {
+    background-color: #4B4EEF;
+  }
+  
+  .search-input {
+    padding: 0.7rem;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    width: 20rem;
+  }
+  
