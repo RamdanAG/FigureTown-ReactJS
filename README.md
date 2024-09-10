@@ -30,14 +30,11 @@ Untuk mendapatkan salinan lokal dari project ini dan menjalankannya, ikuti langk
 
 1. Clone repositori:
    ```bash
-   git clone https://github.com/your-username/figureTown.git
-1. Change Directory:
-   ```bash
-   cd figureTown
-1. Installation npm
+   git clone https://github.com/RamdanAG/figureTown.git
+3. Installation npm:
    ```bash
    npm install
-4. Clone repositori:
+3. Run:
    ```bash
    npm run dev
 
